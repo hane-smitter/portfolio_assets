@@ -16,6 +16,7 @@
 # misc
 /deprecated
 .DS_Store
+Thumbs.db
 .env.local
 .env.development.local
 .env.test.local
@@ -27,8 +28,14 @@ yarn-error.log*
 
 react.md
 
+# Editor and IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
 #backup files
-*.bak
+*.bak*
 
 #firebase logs
 firebase-debug.log
@@ -38,3 +45,15 @@ ui-debug.log
 **/.netlify
 # Local Netlify folder
 .netlify
+.firebase
+
+# Cache files (for esbuild, Sass, etc.)
+.cache/
+
+# Build output
+build/
+public/build/
+
+# Ignore build files
+app/**/*.css
+app/**/*.css.map
